@@ -10,8 +10,15 @@ Help()
     echo "outputimage : Name of the ouput image file"
 }
 
-if [[ $# == 2 ]];then
-    echo $#
+installed=$(which converasl)
+
+if [[ -z "$installed" ]];then
+    echo
+    echo "make sure imagemagick is installed"
+fi
+
+
+if [[ $# != 2 ]];then
     Help
 else
     script -c "$1" -O tmp
