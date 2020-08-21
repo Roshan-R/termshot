@@ -13,4 +13,4 @@ convert program output to image files
 ```
 launches the program `one` and saves the session to `one.png`
 
-![one.png]('one.png')
+![one.png](one.png)
