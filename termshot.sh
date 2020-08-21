@@ -10,11 +10,12 @@ Help()
     echo "outputimage : Name of the ouput image file"
 }
 
-installed=$(which converasl)
+installed=$(which convert)
 
 if [[ -z "$installed" ]];then
     echo
     echo "make sure imagemagick is installed"
+    exit
 fi
 
 
